@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="org.unibl.etf.mdp.vservice.servicer.controller.OrderViewController">
+   <children>
+      <ListView fx:id="orderList" layoutX="40.0" layoutY="78.0" prefHeight="502.0" prefWidth="294.0" />
+      <Label layoutX="163.0" layoutY="35.0" text="Narudžba">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="partBox" layoutX="396.0" layoutY="168.0" prefWidth="150.0" />
+      <Label layoutX="396.0" layoutY="220.0" text="Dostupna količina:" />
+      <Label fx:id="quantityLabel" layoutX="504.0" layoutY="220.0" prefHeight="17.0" prefWidth="35.0" />
+      <Button layoutX="396.0" layoutY="317.0" mnemonicParsing="false" onAction="#addPart" prefHeight="25.0" prefWidth="150.0" text="Dodaj u Narudžbu" />
+      <TextField fx:id="quantityField" layoutX="486.0" layoutY="269.0" prefHeight="25.0" prefWidth="59.0" promptText="Količina" />
+      <Label layoutX="396.0" layoutY="273.0" text="Željena količina:" />
+
+      <Button layoutX="50.0" layoutY="641.0" mnemonicParsing="false" onAction="#sendOrder" prefHeight="25.0" prefWidth="500.0" text="Završi Narudžbu" />
+
+      <Label layoutX="365.0" layoutY="400.0" text="Status narudžbe:" />
+      <Label fx:id="orderStatusLabel" layoutX="470.0" layoutY="400.0" prefHeight="17.0" prefWidth="100.0" text="N/A" />
+      <Button fx:id="refreshStatusButton" layoutX="365.0" layoutY="430.0" mnemonicParsing="false" onAction="#refreshOrderStatus" prefHeight="25.0" prefWidth="212.0" text="Osvježi status narudžbe" />
+      <Button layoutX="539.0" layoutY="23.0" mnemonicParsing="false" onAction="#toFirstView" text="Nazad" />
+      
+   </children>
+</AnchorPane>

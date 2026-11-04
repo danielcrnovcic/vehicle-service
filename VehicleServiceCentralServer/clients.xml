@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<users>
+    <user>
+        <address>123 Main St</address>
+        <email>danielcrnovcic@yahoo.com</email>
+        <firstName>John</firstName>
+        <lastName>Doe</lastName>
+        <password>john.doe</password>
+        <phone>111-222-3333</phone>
+        <status>active</status>
+        <username>john.doe</username>
+        <vehicle>
+            <make>Toyota</make>
+            <model>Camry</model>
+            <registrationNumber>BL123AB</registrationNumber>
+            <year>2020</year>
+        </vehicle>
+    </user>
+    <user>
+        <address>456 Oak Ave</address>
+        <email>jane.smith@example.com</email>
+        <firstName>Jane</firstName>
+        <lastName>Smith</lastName>
+        <password>jane.smith</password>
+        <phone>444-555-6666</phone>
+        <status>active</status>
+        <username>jane.smith</username>
+        <vehicle>
+            <make>Honda</make>
+            <model>Civic</model>
+            <registrationNumber>SA456CD</registrationNumber>
+            <year>2018</year>
+        </vehicle>
+    </user>
+    <user>
+        <address>Teslic</address>
+        <email>danielcrnovcic@yahoo.com</email>
+        <firstName>Daniel</firstName>
+        <lastName>Crnovcic</lastName>
+        <password>daniel.crnovcic</password>
+        <phone>065111222</phone>
+        <status>active</status>
+        <username>daniel.crnovcic</username>
+        <vehicle>
+            <make>Opel</make>
+            <model>Corsa</model>
+            <registrationNumber>BA156CD</registrationNumber>
+            <year>2020</year>
+        </vehicle>
+    </user>
+    <user>
+        <address>Maglaj</address>
+        <email>danielcrnovcic@yahoo.com</email>
+        <firstName>Pero</firstName>
+        <lastName>Peric</lastName>
+        <password>pero.peric</password>
+        <phone>065123456</phone>
+        <status>blocked</status>
+        <username>pero.peric</username>
+        <vehicle>
+            <make>Honda</make>
+            <model>Octavia</model>
+            <registrationNumber>BA12345</registrationNumber>
+            <year>2015</year>
+        </vehicle>
+    </user>
+</users>

@@ -1,0 +1,13 @@
+FAKTURA
+---------------------------------
+Datum: 16.06.2025 01:17
+Klijent: Daniel Crnovcic (daniel.crnovcic)
+Vrsta usluge: Redovni servis
+---------------------------------
+Utrošeni dijelovi:
+- Oil Filter (P004): 8.75 BAM x 2 = 17.50 BAM
+- Headlight Bulb (LED) (P005): 35.99 BAM x 1 = 35.99 BAM
+Ukupno dijelovi: 53.49 BAM
+Cijena usluge: 50.00 BAM
+UKUPNO: 103.49 BAM
+---------------------------------

@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//src/main/java/org/unibl/etf/mdp/vservice/model/Appointment.java=UTF-8
+encoding//src/main/java/org/unibl/etf/mdp/vservice/model/Order.java=UTF-8
+encoding//src/main/java/org/unibl/etf/mdp/vservice/model/Part.java=UTF-8
+encoding//src/main/java/org/unibl/etf/mdp/vservice/repository/AppointmentRepository.java=UTF-8
+encoding//src/main/java/org/unibl/etf/mdp/vservice/repository/PartRepository.java=UTF-8
+encoding//src/main/java/org/unibl/etf/mdp/vservice/repository/UserRepository.java=UTF-8
+encoding//src/main/java/org/unibl/etf/mdp/vservice/server/ChatServer.java=UTF-8
+encoding//src/main/java/org/unibl/etf/mdp/vservice/server/ChatServerThread.java=UTF-8
+encoding//src/main/java/org/unibl/etf/mdp/vservice/service/AppointmentService.java=UTF-8
+encoding//src/main/java/org/unibl/etf/mdp/vservice/service/InvoiceService.java=UTF-8
+encoding//src/main/java/org/unibl/etf/mdp/vservice/service/OrderService.java=UTF-8
+encoding//src/main/java/org/unibl/etf/mdp/vservice/service/PartService.java=UTF-8
+encoding//src/main/java/org/unibl/etf/mdp/vservice/util/MailSender.java=UTF-8
+encoding//src/main/java/org/unibl/etf/mdp/vservice/util/OrderStatusUtil.java=UTF-8
+encoding//src/main/java/org/unibl/etf/mdp/vservice/util/PropertiesUtil.java=UTF-8
+encoding/<project>=windows-1252

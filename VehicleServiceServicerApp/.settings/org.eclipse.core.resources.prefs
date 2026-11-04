@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+encoding//src/org/unibl/etf/mdp/vservice/servicer/controller/OrderViewController.java=UTF-8
+encoding//src/org/unibl/etf/mdp/vservice/servicer/controller/ServicerChatViewController.java=UTF-8
+encoding//src/org/unibl/etf/mdp/vservice/servicer/controller/ServicerDashboardViewController.java=UTF-8
+encoding//src/org/unibl/etf/mdp/vservice/servicer/main/Main.java=UTF-8
+encoding//src/org/unibl/etf/mdp/vservice/servicer/main/SingleInstanceSocketApp.java=UTF-8
+encoding//src/org/unibl/etf/mdp/vservice/servicer/model/Appointment.java=UTF-8
+encoding//src/org/unibl/etf/mdp/vservice/servicer/model/Part.java=UTF-8
+encoding//src/org/unibl/etf/mdp/vservice/servicer/util/ChatClient.java=UTF-8
+encoding//src/org/unibl/etf/mdp/vservice/servicer/util/PropertiesUtil.java=UTF-8
+encoding//src/org/unibl/etf/mdp/vservice/servicer/view/OrderView.fxml=UTF-8
+encoding//src/org/unibl/etf/mdp/vservice/servicer/view/ServicerChatView.fxml=UTF-8
+encoding//src/org/unibl/etf/mdp/vservice/servicer/view/ServicerDashboardView.fxml=UTF-8
+encoding/<project>=windows-1252

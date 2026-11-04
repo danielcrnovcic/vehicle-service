@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/org/unibl/etf/mdp/vservice/supplier/controller/LoginViewController.java=UTF-8
+encoding//src/org/unibl/etf/mdp/vservice/supplier/controller/SupplierDashboardViewController.java=UTF-8
+encoding//src/org/unibl/etf/mdp/vservice/supplier/main/Main.java=UTF-8
+encoding//src/org/unibl/etf/mdp/vservice/supplier/model/Part.java=UTF-8
+encoding//src/org/unibl/etf/mdp/vservice/supplier/server/SupplierServer.java=UTF-8
+encoding//src/org/unibl/etf/mdp/vservice/supplier/server/SupplierServerThread.java=UTF-8
+encoding//src/org/unibl/etf/mdp/vservice/supplier/util/PropertiesUtil.java=UTF-8
+encoding//src/org/unibl/etf/mdp/vservice/supplier/view/LoginView.fxml=UTF-8
+encoding//src/org/unibl/etf/mdp/vservice/supplier/view/SupplierDashboardView.fxml=UTF-8
+encoding/<project>=windows-1252

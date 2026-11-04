@@ -1,0 +1,41 @@
+# ===== Java (kompajlirani izlaz) =====
+bin/
+out/
+*.class
+hs_err_pid*
+
+# ===== JavaFX SDK =====
+# SDK se preuzima zasebno (vidi README), ne ide u repozitorijum
+javafx-sdk-*/
+
+# ===== Tajni podaci (opciono) =====
+.env
+.env.*
+!.env.example
+config-local.properties
+
+# NAPOMENA: config.properties, clients.xml, SSL keystore/truststore (*.jks, *.p12),
+# lib/*.jar (Jsoup, Redis klijent, MQ klijent...) i Eclipse fajlovi
+# (.classpath, .project, .settings/) se NAMJERNO commituju jer su potrebni za pokretanje.
+
+# ===== IDE =====
+.idea/
+*.iml
+.vscode/
+.metadata/
+.recommenders/
+.factorypath
+.apt_generated/
+
+# ===== Logovi (Java Logger) =====
+*.log
+*.log.*
+*.lck
+logs/
+
+# ===== Redis (lokalni dump) =====
+dump.rdb
+
+# ===== OS =====
+.DS_Store
+Thumbs.db

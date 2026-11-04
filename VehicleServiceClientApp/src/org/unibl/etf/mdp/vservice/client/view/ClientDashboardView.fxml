@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.mdp.vservice.client.controller.ClientDashboardViewController">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+    <Label fx:id="welcomeLabel" text="Dobrodošli, Klijente!">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+    <TabPane fx:id="mainTabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+        <Tab text="Zakazivanje termina">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="500.0" prefWidth="780.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <Label text="Zakazivanje novog termina">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <GridPane hgap="10.0" vgap="10.0">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <Label text="Datum:">
+                                <font>
+                                    <Font size="14.0" />
+                                </font>
+                            </Label>
+                            <DatePicker fx:id="appointmentDatePicker" GridPane.columnIndex="1" />
+                            <Label text="Vrijeme:" GridPane.rowIndex="1">
+                                <font>
+                                    <Font size="14.0" />
+                                </font>
+                            </Label>
+                            <ComboBox fx:id="appointmentTimePicker" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                            <Label text="Vrsta usluge:" GridPane.rowIndex="2">
+                                <font>
+                                    <Font size="14.0" />
+                                </font>
+                            </Label>
+                            <ComboBox fx:id="serviceTypeComboBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        </GridPane>
+                        <Button onAction="#handleScheduleAppointmentAction" text="Zakaži termin" />
+                        <VBox.margin>
+                            <Insets top="20.0" />
+                        </VBox.margin>
+                    </VBox>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Pregled istorije servisa">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <VBox layoutX="14.0" layoutY="14.0" prefHeight="500.0" prefWidth="780.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <Label text="Istorija servisa">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <TableView fx:id="historyTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                            <columns>
+                                <TableColumn fx:id="historyDateTimeColumn" prefWidth="150.0" text="Datum i Vrijeme" />
+                                <TableColumn fx:id="historyServiceTypeColumn" prefWidth="120.0" text="Vrsta Usluge" />
+                                <TableColumn fx:id="historyStatusColumn" prefWidth="100.0" text="Status" />
+                                <TableColumn fx:id="historyDescriptionColumn" prefWidth="200.0" text="Opis" />
+                                <TableColumn fx:id="historyCommentColumn" prefWidth="200.0" text="Komentar Servisera" />
+                            </columns>
+                            <columnResizePolicy>
+                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                            </columnResizePolicy>
+                        </TableView>
+                        <VBox.margin>
+                            <Insets top="10.0" />
+                        </VBox.margin>
+                    </VBox>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab fx:id="chatTab" text="Chat">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <VBox layoutX="14.0" layoutY="14.0" prefHeight="500.0" prefWidth="780.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <Label text="Chat">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <TextArea fx:id="chatArea" editable="false" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="200.0" spacing="10.0">
+                            <Label text="Tip poruke:" />
+                            <ComboBox fx:id="messageTypeComboBox" prefWidth="100.0" promptText="Broadcast" />
+                            <Label fx:id="recipientLabel" text="Primalac:" visible="false" />
+                            <TextField fx:id="recipientField" prefWidth="150.0" promptText="Korisničko ime/Ime grupe" visible="false" />
+                        </HBox>
+
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="200.0" spacing="10.0">
+                            <TextField fx:id="chatMessageField" HBox.hgrow="ALWAYS" />
+                            <Button onAction="#handleSendMessageAction" text="Pošalji" />
+                        </HBox>
+
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="200.0" spacing="10.0" VBox.vgrow="NEVER">
+                            <padding>
+                                <Insets top="10.0" />
+                            </padding>
+                            <Label text="Ime grupe:" />
+                            <TextField fx:id="groupNameField" prefWidth="150.0" promptText="Unesite ime grupe" />
+                            <Button onAction="#handleJoinGroupAction" text="Pridruži se grupi" />
+                            <Button onAction="#handleLeaveGroupAction" text="Napusti grupu" />
+                        </HBox>
+                        <VBox.margin>
+                            <Insets top="10.0" />
+                        </VBox.margin>
+                    </VBox>
+                </AnchorPane>
+            </content>
+        </Tab>
+    </TabPane>
+</VBox>

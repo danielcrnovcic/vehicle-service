@@ -1,0 +1,12 @@
+FAKTURA
+---------------------------------
+Datum: 12.06.2025 16:19
+Klijent: John Doe (john.doe)
+Vrsta usluge: redovni servis
+---------------------------------
+Utrošeni dijelovi:
+Nema utrošenih dijelova.
+Ukupno dijelovi: 0.00 BAM
+Cijena usluge: 50.00 BAM
+UKUPNO: 50.00 BAM
+---------------------------------

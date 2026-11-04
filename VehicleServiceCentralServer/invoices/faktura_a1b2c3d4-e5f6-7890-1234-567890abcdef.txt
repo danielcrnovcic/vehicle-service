@@ -1,0 +1,12 @@
+FAKTURA
+---------------------------------
+Datum: 16.06.2025 01:47
+Klijent: John Doe (john.doe)
+Vrsta usluge: redovni servis
+---------------------------------
+Utrošeni dijelovi:
+- Engine Filter (P001): 25.50 BAM x 3 = 76.50 BAM
+Ukupno dijelovi: 76.50 BAM
+Cijena usluge: 50.00 BAM
+UKUPNO: 126.50 BAM
+---------------------------------
